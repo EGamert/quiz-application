@@ -43,6 +43,7 @@ button{
     background: linear-gradient(75deg, rgb(247, 247, 117), white);
     height:50px;
     width:50px;
+    cursor:pointer;
 }
 
 button:hover{
