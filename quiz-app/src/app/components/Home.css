@@ -1,0 +1,19 @@
+.container{
+    display:flex;
+    margin:auto;
+    width:max-content;
+}
+
+.home-title{
+    background-color: rgba(245, 127, 23, 0.8);
+    width: fit-content;
+    text-align:center;
+    padding: 1%;
+    margin: auto;
+    margin-bottom: 2%;
+    border-radius:1vh;
+    font-size: xx-large;
+    font-weight:bolder;
+    color: rgb(48, 43, 43);
+    font-family:cursive;
+}

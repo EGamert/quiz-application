@@ -1,0 +1,35 @@
+.card{
+    width: 30%;
+    text-align:center;
+    padding: 5%;
+    background: rgba(255, 193, 7, 0.8); /* warm yellow-orange background */
+    border: 1px dotted black;
+}
+
+.card:hover{
+    animation: hovered 0.2s forwards;
+}
+
+@keyframes hovered{
+    0%{
+        background: rgba(255, 193, 7, 0.8);
+        
+    }
+    100%{
+        background: rgba(245, 127, 23, 0.8); /* darker orange on hover */
+    }
+}
+
+.title{
+    font-family:monospace;
+    font-size: 8vh;
+    font-weight: bolder;
+    color: #333; /* dark gray text */
+    margin-bottom: 35%;
+}
+
+.info{
+    font-size: 3vh;
+    color:rgb(37, 35, 35);
+    font-family:fantasy;
+}
