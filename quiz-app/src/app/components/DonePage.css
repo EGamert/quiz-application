@@ -1,0 +1,47 @@
+.end-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+    padding: 20px;
+  }
+  
+  .end-screen h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .end-screen p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .end-screen button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .end-screen button:hover {
+    background-color: #3e8e41;
+  }
+  
+  .end-screen button:active {
+    background-color: #2f6f31;
+    transform: translateY(2px);
+  }
+  
+  .end-screen button:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px #4CAF50;
+  }

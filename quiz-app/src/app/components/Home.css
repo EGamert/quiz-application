@@ -2,6 +2,8 @@
     display:flex;
     margin:auto;
     width:max-content;
+    flex: 1;
+    width: 90%;
 }
 
 .home-title{
