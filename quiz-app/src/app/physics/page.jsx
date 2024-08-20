@@ -59,9 +59,6 @@ export default function Page() {
   function updateScore(){
     setScore(score + 1)
   }
-  function resetScore(){
-    setScore(0)
-  }
   function handleClick(){
     if (questionNo < questions.length) {
       setQuestionNo(questionNo + 1)
