@@ -1,22 +1,21 @@
 .navbar {
-    background-color: #C9E4CA; /* soft mint color */
+    background-color: #C9E4CA; 
     padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #87CEEB; /* light sky blue color */
+    border-bottom: 1px solid #87CEEB;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 85%; /* set a max width to center the navbar */
-    margin: 0 auto; /* center the navbar */
+    margin: 0 auto; 
+    width:fit-content;
   }
   
   .back-button {
-    color: #6495ED; /* soft blue color */
+    color: #6495ED;
     text-decoration: none;
     font-size: 1.2rem;
     font-weight: bold;
-    margin: 1rem; /* equal margin */
     transition: color 0.2s ease;
     padding: 1%;
     border-radius: 6vh;
@@ -50,11 +49,10 @@
   
   .score {
     font-size: 1.4rem;
-    color: #6495ED; /* soft blue color */
-    margin: 1rem; /* equal margin */
+    color: #6495ED;
     font-weight: bold;
-    background-color: #C9E4CA; /* soft mint color */
-    padding: 0.5rem 1rem;
+    background-color: #C9E4CA;
+    padding: 0.5%;
     border-radius: 0.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
