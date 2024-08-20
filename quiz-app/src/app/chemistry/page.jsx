@@ -51,7 +51,6 @@ export default function Page() {
       correctOption: 'NaCl',
     }
   ]
-
   const [questionNo, setQuestionNo] = useState(1)
   const [option1, setOption1] = useState(questions[0].option[0])
   const [option2, setOption2] = useState(questions[0].option[1])
@@ -59,13 +58,12 @@ export default function Page() {
   const [option4, setOption4] = useState(questions[0].option[3])
   const [question, setQuestion] = useState(questions[0].question)
 
+  const [Next, setNext] = useState(false)
+
   const [EndScreen, setEndScreen] = useState(true)
 
   function updateScore(){
     setScore(score + 1)
-  }
-  function resetScore(){
-    setScore(0)
   }
   function handleClick(){
     if (questionNo < questions.length) {
@@ -80,9 +78,13 @@ export default function Page() {
     }
   }
 
+  function done(){
+    setEndScreen(false)
+  }
+
   return(
     <div className='question-page'>
-      <NavbarComponent title={'Chemistry'} score={score} />
+      <NavbarComponent title={'Physics'} score={score} />
       {
         EndScreen  ? (
             <QuestionBox indexno={Index}
@@ -95,9 +97,13 @@ export default function Page() {
                    correctOption={questions[questionNo - 1].correctOption}
                    HandleSubmit={handleClick}
                    updateScore={updateScore}
+                   Next={Next}
+                   setNext={setNext}
+                   setEndScreen={done}
                    />
-        ) :
+        ):
         <DonePage score={score} />
+
       }
     </div>
   )

@@ -54,6 +54,8 @@ export default function Page() {
   const [option4, setOption4] = useState(questions[0].option[3])
   const [question, setQuestion] = useState(questions[0].question)
 
+  const [Next, setNext] = useState(false)
+
   const [EndScreen, setEndScreen] = useState(true)
 
   function updateScore(){
@@ -72,6 +74,10 @@ export default function Page() {
     }
   }
 
+  function done(){
+    setEndScreen(false)
+  }
+
   return(
     <div className='question-page'>
       <NavbarComponent title={'Physics'} score={score} />
@@ -87,6 +93,9 @@ export default function Page() {
                    correctOption={questions[questionNo - 1].correctOption}
                    HandleSubmit={handleClick}
                    updateScore={updateScore}
+                   Next={Next}
+                   setNext={setNext}
+                   setEndScreen={done}
                    />
         ):
         <DonePage score={score} />

@@ -12,9 +12,9 @@ export default function QuestionBox(props) {
       props.updateScore()
     } else {
       setCorrectOption(null);
-    }
+    }    
 
-    props.HandleSubmit()
+    props.setNext(true)
     
   };
 
@@ -25,7 +25,7 @@ export default function QuestionBox(props) {
       </div>
       <div className="options">
         <div
-          className={`option ${selectedOption === props.option1 && (correctOption === props.option1 ? 'correct' : 'incorrect')}`}
+          className={` option ${selectedOption === props.option1 && (correctOption === props.option1 ? 'correct' : 'incorrect')}`}
           onClick={() => handleOptionClick(props.option1)}
         >
           <p>{props.option1}</p>
@@ -48,6 +48,24 @@ export default function QuestionBox(props) {
         >
           <p>{props.option4}</p>
         </div>
+      </div>
+
+      <div className='buttons'>
+      {props.Next ? 
+      <>
+      <div className='next' onClick={()=>{
+        props.setNext(false)
+        props.HandleSubmit()
+      }}>
+        Next
+      </div>
+      <div className="next" onClick={()=>{
+        props.setEndScreen(true)
+      }}>
+        Submit
+      </div>
+      </>
+      : <></>}
       </div>
     </div>
   );

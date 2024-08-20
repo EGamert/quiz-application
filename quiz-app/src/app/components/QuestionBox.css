@@ -53,3 +53,29 @@
     color: #666; /* Medium gray */
     font-size: 18px; /* Larger font size */
   }
+
+  
+.next{
+  color: #6495ED;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 1rem;
+  transition: color 0.2s ease;
+  padding: 1%;
+  border-radius: 6vh;
+  background-color: #f3e4d2;
+  padding: 3%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: fit-content;
+  height: fit-content;
+  text-align:center;
+  cursor:pointer;
+  align-items: center;
+  margin:auto;
+}
+
+.buttons{
+  display:flex;
+  margin:auto;
+}
