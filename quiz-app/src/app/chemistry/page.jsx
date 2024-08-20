@@ -82,7 +82,7 @@ export default function Page() {
 
   return(
     <div className='question-page'>
-      <NavbarComponent title={'Maths'} score={score} />
+      <NavbarComponent title={'Chemistry'} score={score} />
       {
         EndScreen  ? (
             <QuestionBox indexno={Index}

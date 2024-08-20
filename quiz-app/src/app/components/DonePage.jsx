@@ -8,9 +8,9 @@ const DonePage = (props) => {
       <h1>Congratulations!</h1>
       <p>You have completed the quiz!</p>
       <p>Final Score: {props.score}/8</p>
-      <Link href="/">
+      <a href="/">
         <button>Back to Home</button>
-      </Link>
+      </a>
     </div>
   );
 };
